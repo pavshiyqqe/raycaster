@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/29 19:31:17 by abergman          #+#    #+#             */
-/*   Updated: 2024/06/02 16:17:07 by abergman         ###   ########.fr       */
+/*   Created: 2025/11/18 11:39:59 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/18 11:39:59 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 #include <stdio.h>

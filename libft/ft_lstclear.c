@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/01 16:58:42 by abergman          #+#    #+#             */
-/*   Updated: 2024/06/01 17:23:47 by abergman         ###   ########.fr       */
+/*   Created: 2025/11/18 11:40:19 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/18 11:40:19 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 #include <stdlib.h>

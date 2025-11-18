@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/28 13:04:32 by abergman          #+#    #+#             */
-/*   Updated: 2024/06/04 00:39:17 by abergman         ###   ########.fr       */
+/*   Created: 2025/11/18 11:37:35 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/18 11:37:35 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include <stdlib.h>
 // #include <stdio.h>

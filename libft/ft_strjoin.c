@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/24 22:00:55 by abergman          #+#    #+#             */
-/*   Updated: 2024/05/31 02:27:35 by abergman         ###   ########.fr       */
+/*   Created: 2025/11/18 11:38:52 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/18 11:38:52 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include<stdio.h>
 #include "libft.h"

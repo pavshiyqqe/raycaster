@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/24 16:46:56 by abergman          #+#    #+#             */
-/*   Updated: 2024/06/03 23:52:26 by abergman         ###   ########.fr       */
+/*   Created: 2025/11/18 11:38:10 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/18 11:38:11 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 #include <stdlib.h>

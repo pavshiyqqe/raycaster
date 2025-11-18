@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/23 22:39:33 by abergman          #+#    #+#             */
-/*   Updated: 2024/06/02 19:02:27 by abergman         ###   ########.fr       */
+/*   Created: 2025/11/18 11:37:07 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/18 11:37:07 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 int	ft_result(int n, int sign)
 {

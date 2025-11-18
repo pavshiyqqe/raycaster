@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/23 00:09:13 by abergman          #+#    #+#             */
-/*   Updated: 2024/05/23 00:41:24 by abergman         ###   ########.fr       */
+/*   Created: 2025/11/18 11:38:46 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/18 11:38:46 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 /*
  * Concatenate two strings. Appends src to string dst of size siz (unlike

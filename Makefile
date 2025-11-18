@@ -6,7 +6,7 @@
 #    By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/16 17:37:37 by yyaniv            #+#    #+#              #
-#    Updated: 2025/09/07 11:46:42 by yyaniv           ###   ########.fr        #
+#    Updated: 2025/11/18 11:42:26 by yyaniv           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,7 +76,7 @@ $(OBJDIR)/%.o: ./%.c $(INCLUDE_FILE)
 
 $(NAME): $(LIBFT)  $(OBJDIR) $(OBJS)
 		$(CC)  $(CFLAGS) $(OBJS) -o $(NAME) $(LIBFT) $(MLX_FLAGS)
-	@echo "$(GREEN)$(BOLD)[ ★ SUCCESS ★ ]$(BOLD_R)$(RESET): Type './cub3d ' to execute."
+	@echo "$(GREEN)$(BOLD)[ ★ SUCCESS ★ ]$(BOLD_R)$(RESET): Type './cub3D ' to execute."
 
 mlx:
 		@mkdir mlx;

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/03 17:47:52 by yyaniv            #+#    #+#             */
-/*   Updated: 2025/09/07 11:41:35 by yyaniv           ###   ########.fr       */
+/*   Created: 2025/02/03 17:47:52 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/18 11:44:28 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -247,10 +247,10 @@ typedef struct s_data
 
 # define WALL '1'
 # define FLOOR '0'
-# define HEIGHT 250
-# define WIDTH 500
-# define PLAYERS_SPEED 0.003
-# define ROTATE_SPEED 0.005
+# define HEIGHT 600
+# define WIDTH 800
+# define PLAYERS_SPEED 0.01
+# define ROTATE_SPEED 0.05
 # define DEFAULT_DOUBLE 0.01
 # define FRAME_DELAY 10000
 # define LOAD_SPRITES 1

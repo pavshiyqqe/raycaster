@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/25 16:18:25 by abergman          #+#    #+#             */
-/*   Updated: 2024/06/03 23:47:06 by abergman         ###   ########.fr       */
+/*   Created: 2025/11/18 11:38:14 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/18 11:38:14 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include <stdio.h>
 #include "libft.h"

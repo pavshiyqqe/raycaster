@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/26 14:55:03 by abergman          #+#    #+#             */
-/*   Updated: 2024/05/30 20:52:59 by abergman         ###   ########.fr       */
+/*   Created: 2025/11/18 11:39:13 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/18 11:39:13 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include <stdlib.h>
 #include <stdio.h>

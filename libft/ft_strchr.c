@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/23 00:58:26 by abergman          #+#    #+#             */
-/*   Updated: 2024/06/02 16:16:14 by abergman         ###   ########.fr       */
+/*   Created: 2025/11/18 11:39:09 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/18 11:39:09 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 /*
  *  The strchr() function returns a pointer 

@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/29 10:31:50 by abergman          #+#    #+#             */
-/*   Updated: 2024/05/29 11:38:29 by abergman         ###   ########.fr       */
+/*   Created: 2025/11/18 11:39:18 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/18 11:39:18 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 #include <stdio.h>

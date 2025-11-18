@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/03 14:34:31 by abergman          #+#    #+#             */
-/*   Updated: 2024/06/03 22:12:57 by abergman         ###   ########.fr       */
+/*   Created: 2025/11/18 11:40:06 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/18 11:40:06 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 #include "stdlib.h"

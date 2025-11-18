@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hsharame <hsharame@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/24 15:47:37 by abergman          #+#    #+#             */
-/*   Updated: 2025/02/06 15:45:08 by hsharame         ###   ########.fr       */
+/*   Created: 2025/11/18 11:39:02 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/18 11:39:05 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 #include <stdlib.h>

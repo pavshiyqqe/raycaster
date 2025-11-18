@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abergman <abergman@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/01 15:43:29 by abergman          #+#    #+#             */
-/*   Updated: 2024/06/01 15:52:28 by abergman         ###   ########.fr       */
+/*   Created: 2025/11/18 11:37:50 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/18 11:37:50 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 #include "stdlib.h"
