@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+         #
+#    By: rromanov <rromanov@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/16 17:37:37 by yyaniv            #+#    #+#              #
-#    Updated: 2025/11/18 11:42:26 by yyaniv           ###   ########.fr        #
+#    Updated: 2025/11/19 18:00:08 by rromanov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,7 @@ SRC				:= ./get_next_line/get_next_line.c \
 ./srcs/parsing/check_map.c \
 ./srcs/parsing/check_grid.c \
 ./srcs/parsing/check_colors.c \
+./srcs/parsing/pars_texture_utils.c \
 ./srcs/execution/ft_update_sprite_animation.c \
 ./srcs/execution/ft_texture_params_init.c \
 ./srcs/execution/ft_move_camera.c \
@@ -60,7 +61,7 @@ HEADERS 		= -I$(INCLUDE_DIR) -I./libft
 LIBFT			= ./libft/libft.a
 
 DEBUG			= -g3
-CFLAGS			= -Wall -Wextra -Werror -o3
+CFLAGS			= -Wall -Wextra -Werror -O3
 
 RM				= @rm
 

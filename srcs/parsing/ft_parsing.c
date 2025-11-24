@@ -32,29 +32,3 @@ bool	parsing(t_data *data)
 		find_player(data, data->map);
 	return (true);
 }
-
-void	affiche_map(t_map *map)
-{
-	int	i;
-
-	i = 0;
-	if (map->map_grid)
-	{
-		while (map->map_grid[i])
-		{
-			printf("%s", map->map_grid[i]);
-			i++;
-		}
-	}
-	i = 0;
-	if (map->initial_map)
-	{
-		while (map->initial_map[i])
-		{
-			printf("%s", map->initial_map[i]);
-			i++;
-		}
-	}
-	printf("%#x\n", map->f_color);
-	printf("%#x\n", map->c_color);
-}

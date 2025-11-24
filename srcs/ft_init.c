@@ -23,8 +23,8 @@ t_map	*init_map(char *filename)
 	map->fd = 0;
 	map->height = 0;
 	map->length = 0;
-	map->c_color = 0;
-	map->f_color = 0;
+	map->c_color = -1;
+	map->f_color = -1;
 	map->player = 0;
 	map->initial_map = NULL;
 	map->map_grid = NULL;

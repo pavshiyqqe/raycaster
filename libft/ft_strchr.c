@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 /*
  *  The strchr() function returns a pointer 
  *  to the first occurrence of the character c in the string s.
@@ -18,7 +17,7 @@
 
 #include "libft.h"
 #include <stddef.h>
-#include<string.h>
+#include <string.h>
 
 char	*ft_strchr(const char *s, int c)
 {

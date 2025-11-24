@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 /* 
  * DESCRIPTION
  * La fonction ft_memcpy() copie 'num' octets depuis la zone mémoire 'source' 

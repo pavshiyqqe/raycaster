@@ -10,9 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-#define BUF_SIZE = 20
+#define BUF_SIZE 20
 
 void	*ft_memmove( void *dest, const void *source, size_t size )
 {
@@ -33,7 +32,7 @@ void	*ft_memmove( void *dest, const void *source, size_t size )
 	else
 	{
 		while (index < size)
-		{			
+		{
 			((unsigned char *)dest)[index] = ((unsigned char *)source)[index];
 			index++;
 		}

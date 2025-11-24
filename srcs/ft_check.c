@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_check.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rromanov <rromanov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 14:14:32 by yyaniv            #+#    #+#             */
-/*   Updated: 2025/09/07 09:01:35 by yyaniv           ###   ########.fr       */
+/*   Updated: 2025/11/19 18:05:32 by rromanov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../header/cub3D.h"
+#include <sys/stat.h>
 
 bool	ft_check_size_of_window(void)
 {
@@ -23,9 +24,14 @@ bool	ft_check_size_of_window(void)
 
 bool	check_argv(int argc, char *filename)
 {
-	int	fd;
+	int			fd;
+	struct stat	path_stat;
 
 	if (argc != 2)
+		return (false);
+	if (stat(filename, &path_stat) == -1)
+		return (false);
+	if (S_ISDIR(path_stat.st_mode))
 		return (false);
 	fd = open(filename, O_RDONLY);
 	if (fd < 0)
@@ -40,9 +46,17 @@ bool	check_extension(char *filename, char *extension)
 {
 	int	i;
 	int	j;
+	int	fn_len;
+	int	ext_len;
 
-	i = ft_strlen(filename) - 1;
-	j = 3;
+	fn_len = ft_strlen(filename);
+	ext_len = ft_strlen(extension);
+	if (fn_len <= ext_len)
+		return (false);
+	if (filename[fn_len - ext_len - 1] == '/')
+		return (false);
+	i = fn_len - 1;
+	j = ext_len - 1;
 	while (j >= 0)
 	{
 		if (filename[i] != extension[j])

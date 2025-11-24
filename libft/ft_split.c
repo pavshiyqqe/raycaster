@@ -10,41 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include <stdlib.h>
 #include <stdio.h>
 #include "libft.h"
-/*
-int     ft_strlen(char *str)
-{
-        int     counter;
 
-        counter = 0;
-        while (str[counter])
-        {
-                counter++;
-        }
-        return (counter);
-}
-
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
-{
-	size_t	count;
-
-	count = 0;
-	if (!size)
-	{
-		return ft_strlen((char *)src);
-	}
-	while (src[count] != '\0' && count < (size -1))
-	{
-		dst[count] = src[count];
-		count++;
-	}
-	dst[count] = '\0';
-	return ft_strlen((char *)src);
-}
-*/
 unsigned int	ft_number_strings(char const *s, char c)
 {
 	unsigned int	count;
@@ -95,6 +64,17 @@ void	ft_mns(char const **nxt_str, unsigned int *nxt_str_len, char c)
 	}
 }
 
+static char	**ft_free_split(char **res, unsigned int index)
+{
+	while (index > 0)
+	{
+		index--;
+		free(res[index]);
+	}
+	free(res);
+	return (NULL);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char			**res;
@@ -115,16 +95,10 @@ char	**ft_split(char const *s, char c)
 		ft_mns((const char **)&next_string, &next_string_length, c);
 		res[index] = (char *)malloc(sizeof(char) * next_string_length + 1);
 		if (!res[index])
-			return (0);
+			return (ft_free_split(res, index));
 		ft_strlcpy(res[index], next_string, next_string_length + 1);
 		index++;
 	}
 	res[index] = NULL;
 	return (res);
 }
-/*
-int	main(void)
-{
-	ft_split(" Suspendisse   ", ' ');
-	return (0);
-}*/

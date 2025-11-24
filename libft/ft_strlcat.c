@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 /*
  * Concatenate two strings. Appends src to string dst of size siz (unlike
        strncat(), siz is the full size of dst, not space left). At most siz-1

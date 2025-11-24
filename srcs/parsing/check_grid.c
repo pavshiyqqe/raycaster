@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/21 15:14:20 by yyaniv            #+#    #+#             */
-/*   Updated: 2025/09/03 14:05:21 by yyaniv           ###   ########.fr       */
+/*   Created: 2025/11/19 18:29:02 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/19 18:29:29 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,13 @@ bool	check_other_char(char *line)
 	int	end;
 
 	i = 0;
-	while (line[i] == ' ')
+	while (ft_isspace(line[i]))
 		i++;
 	end = ft_strlen(line) - 1;
 	while (i <= end)
 	{
 		if (line[i] != '1' && line[i] != '0'
-			&& !is_player(line[i]) && line[i] != ' ')
+			&& !is_player(line[i]) && !ft_isspace(line[i]))
 			return (false);
 		i++;
 	}

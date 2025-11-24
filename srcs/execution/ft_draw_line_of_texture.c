@@ -34,7 +34,7 @@ static void	ft_draw_line(t_data *s, t_sprite *frame, int height_tex, int x)
 			continue ;
 		if (isnan(s->draw->texpos) || isinf(s->draw->texpos))
 			s->draw->texpos = 0.0;
-		s->draw->texy = ((int)s->draw->texpos) & (height_tex - 1);
+		s->draw->texy = ((int)s->draw->texpos) % height_tex;
 		s->draw->texpos += s->draw->step;
 		if (ft_random_wall_sprite(s))
 		{

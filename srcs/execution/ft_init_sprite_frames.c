@@ -12,7 +12,7 @@
 
 #include "cub3D.h"
 
-static void	ft_init_sprites(t_data *s, char **path, int w, int h)
+static int	ft_init_sprites(t_data *s, char **path, int w, int h)
 {
 	int			i;
 	t_animation	*anim;
@@ -26,13 +26,17 @@ static void	ft_init_sprites(t_data *s, char **path, int w, int h)
 		anim->frames[i].line_length = 0;
 		anim->frames[i].endian = 0;
 		anim->frames[i].image = mlx_xpm_file_to_image(s->mlx, path[i], &w, &h);
+		if (!anim->frames[i].image)
+			return (0);
 		anim->frames[i].address = mlx_get_data_addr(anim->frames[i].image,
 				&anim->frames[i].bits_per_pixel, &anim->frames[i].line_length,
 				&anim->frames[i].endian);
 		anim->frames[i].width = w;
 		anim->frames[i].height = h;
 		free(path[i]);
+		path[i] = NULL;
 	}
+	return (1);
 }
 
 int	ft_initialisation_sprites(t_data *s, int h, int w)
@@ -55,6 +59,7 @@ int	ft_initialisation_sprites(t_data *s, int h, int w)
 	path[6] = ft_strdup("./textures/sprites/7.xpm");
 	path[7] = ft_strdup("./textures/sprites/8.xpm");
 	path[8] = ft_strdup("./textures/sprites/9.xpm");
-	ft_init_sprites(s, path, w, h);
+	if (!ft_init_sprites(s, path, w, h))
+		return (0);
 	return (1);
 }

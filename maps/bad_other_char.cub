@@ -4,6 +4,8 @@ WE ./textures/wolfenstein/eagle.xpm
 EA ./textures/wolfenstein/red_brick.xpm
 
 F 220,100,0
+F 220,100,0
+C 225,30,0
 C 225,30,0
 
         1111111111111111111111111

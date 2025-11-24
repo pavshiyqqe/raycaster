@@ -10,9 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-#include<stdio.h>
+#include <stdio.h>
 #define BUF_SIZE 20
 
 void	*ft_memset(void *dest, int c, size_t count)

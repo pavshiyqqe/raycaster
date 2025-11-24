@@ -3,8 +3,8 @@ SO ./textures/wolfenstein/mossy.xpm
 WE ./textures/wolfenstein/eagle.xpm
 EA ./textures/wolfenstein/red_brick.xpm
 
-F 20,20,20
-C 200,200,200
+F 220,100,0
+C 225,30,0
 
 1111111111111
 1001011000001

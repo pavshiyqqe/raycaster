@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yyaniv <yyaniv@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/12 04:59:12 by yyaniv            #+#    #+#             */
-/*   Updated: 2025/09/03 14:02:56 by yyaniv           ###   ########.fr       */
+/*   Created: 2025/11/02 02:35:19 by yyaniv            #+#    #+#             */
+/*   Updated: 2025/11/19 18:30:12 by yyaniv           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	find_start(char **map)
 	while (map[i])
 	{
 		j = 0;
-		while (map[i][j] == ' ')
+		while (ft_isspace(map[i][j]))
 			j++;
 		if (map[i][j] == '1')
 			return (i);
@@ -38,10 +38,10 @@ int	find_end(char **map)
 	i = 0;
 	while (map[i])
 		i++;
-	while (i-- >= 0)
+	while (i-- > 0)
 	{
 		j = 0;
-		while (map[i][j] == ' ')
+		while (ft_isspace(map[i][j]))
 			j++;
 		if (map[i][j] == '1')
 			return (i);
@@ -62,35 +62,18 @@ char	**extract_map(char **dirty, int start, int end)
 		return (NULL);
 	while (start <= end)
 	{
-		map[i] = ft_remove_newline(dirty[start]);
-		start++;
+		map[i] = ft_strdup(dirty[start]);
+		if (!map[i])
+		{
+			free_tab(map);
+			return (NULL);
+		}
 		i++;
+		start++;
 	}
 	map[i] = NULL;
 	return (map);
 }
-
-int	find_longest_line(char **map)
-{
-	int	i;
-	int	j;
-	int	longest;
-
-	i = 0;
-	longest = 0;
-	while (map[i])
-	{
-		j = 0;
-		while (map[i][j] && map[i][j] != '\n')
-			j++;
-		if (j > longest)
-			longest = j;
-		i++;
-	}
-	return (longest);
-}
-
-
 
 bool	find_grid(t_map *map, char **dirty_map)
 {
@@ -98,15 +81,10 @@ bool	find_grid(t_map *map, char **dirty_map)
 	int	end;
 
 	start = find_start(dirty_map);
-	if (start == -1)
-		return (false);
 	end = find_end(dirty_map);
-	map->height = end - start + 1;
 	map->map_grid = extract_map(dirty_map, start, end);
 	if (!map->map_grid)
 		return (false);
-	map->length = find_longest_line(map->map_grid);
-	display_grid(map->map_grid);
+	map->height = end - start + 1;
 	return (true);
 }
-	
